@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseEntered="#onCardEntered" prefHeight="638.0" prefWidth="341.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bancoInter.BancoInterController">
+   <children>
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#ffffff00" height="69.0" layoutX="23.0" layoutY="74.0" stroke="#dfdfdf" strokeType="INSIDE" strokeWidth="2.0" width="287.0" />
+      <Label fx:id="cartaoTitular" layoutX="50.0" layoutY="81.0" style="-fx-font-weight: bold;" text="TITULAR" />
+      <Label fx:id="cartaoNumero" layoutX="48.0" layoutY="114.0" style="-fx-font-weight: bold;" text="**** 0000" />
+      <Label layoutX="140.0" layoutY="14.0" style="-fx-font-weight: bold;" text="Cartão">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutX="23.0" layoutY="159.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="287.0" style="-fx-border-style: hidden hidden solid hidden; -fx-border-color: #DFDFDF; -fx-border-width: 2; -fx-background-color: #FFFFFF00;" text="Ver a senha do cartão" />
+      <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutX="23.0" layoutY="202.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="287.0" style="-fx-border-style: hidden hidden solid hidden; -fx-border-color: #DFDFDF; -fx-border-width: 2; -fx-background-color: #FFFFFF00;" text="Alterar a senha do cartão" />
+      <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutX="21.0" layoutY="245.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="287.0" style="-fx-border-style: hidden hidden solid hidden; -fx-border-color: #DFDFDF; -fx-border-width: 2; -fx-background-color: #FFFFFF00;" text="Solicitar 2ª via" />
+      <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutX="23.0" layoutY="288.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="287.0" style="-fx-border-style: hidden hidden solid hidden; -fx-border-color: #DFDFDF; -fx-border-width: 2; -fx-background-color: #FFFFFF00;" text="Google Pay" />
+      <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutX="21.0" layoutY="331.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="287.0" style="-fx-border-style: hidden hidden solid hidden; -fx-border-color: #DFDFDF; -fx-border-width: 2; -fx-background-color: #FFFFFF00;" text="Autenticação Google Pay" />
+      <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutX="21.0" layoutY="374.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="287.0" style="-fx-border-style: hidden hidden solid hidden; -fx-border-color: #DFDFDF; -fx-border-width: 2; -fx-background-color: #FFFFFF00;" text="Autenticação Samsung Pay" />
+      <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutX="21.0" layoutY="417.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="287.0" style="-fx-border-style: hidden hidden solid hidden; -fx-border-color: #DFDFDF; -fx-border-width: 2; -fx-background-color: #FFFFFF00;" text="Compras online" />
+      <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutX="21.0" layoutY="460.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="287.0" style="-fx-border-style: hidden hidden solid hidden; -fx-border-color: #DFDFDF; -fx-border-width: 2; -fx-background-color: #FFFFFF00;" text="Compras por aproximação (contactless)" />
+      <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutX="23.0" layoutY="531.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="287.0" style="-fx-border-style: solid; -fx-border-color: #DFDFDF; -fx-border-width: 2; -fx-font-weight: bolder; -fx-background-color: #FFFFFF00; -fx-background-radius: 10; -fx-border-radius: 8;" text="Central de ajuda" />
+      <Slider blockIncrement="1.0" layoutX="265.0" layoutY="345.0" max="1.0" prefHeight="14.0" prefWidth="38.0" />
+      <Slider blockIncrement="1.0" layoutX="265.0" layoutY="388.0" max="1.0" prefHeight="14.0" prefWidth="38.0" />
+      <Slider blockIncrement="1.0" layoutX="265.0" layoutY="431.0" max="1.0" prefHeight="14.0" prefWidth="38.0" />
+      <Slider blockIncrement="1.0" layoutX="265.0" layoutY="474.0" max="1.0" prefHeight="14.0" prefWidth="38.0" />
+      <Button fx:id="CardBackButton" layoutX="21.0" layoutY="12.0" mnemonicParsing="false" onAction="#onCardBackButtonClick" prefHeight="30.0" prefWidth="36.0" style="-fx-background-color: #FFFFFF00;">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="21.0" preserveRatio="true">
+               <image>
+                  <Image url="@images/backArrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

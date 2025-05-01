@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="638.0" prefWidth="341.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bancoInter.BancoInterController">
+   <children>
+      <ImageView fitHeight="36.0" fitWidth="133.0" layoutX="105.0" layoutY="71.0">
+         <image>
+            <Image url="@images/logo-inter.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="LoginButton" layoutX="28.0" layoutY="376.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="36.0" prefWidth="270.0" style="-fx-background-color: #EC7000; -fx-font-weight: bold; -fx-background-radius: 7;" text="Entrar" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="29.0" layoutY="207.0" text="CPF" />
+      <TextField fx:id="loginCPF" layoutX="28.0" layoutY="225.0" prefHeight="36.0" prefWidth="270.0" promptText="000.000.000-00" style="-fx-background-color: #F5F6FA; -fx-background-radius: 7;" />
+      <Label layoutX="29.0" layoutY="274.0" text="Senha" />
+      <Label fx:id="registroErro" alignment="CENTER" layoutX="58.0" layoutY="534.0" prefHeight="22.0" prefWidth="210.0" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="28.0" layoutY="429.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="270.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #EC7000; -fx-font-weight: bold; -fx-border-radius: 7;" text="Não sei minha senha" textFill="#ec7000">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="AnotherButton" layoutX="171.0" layoutY="596.0" mnemonicParsing="false" onAction="#onAnotherButtonClick" prefHeight="27.0" prefWidth="162.0" style="-fx-background-color: #FFFFFF; -fx-font-weight: bold;" text="Entrar com outra conta" textFill="#ec7000" />
+      <Label fx:id="loginErro" layoutX="31.0" layoutY="345.0" />
+      <PasswordField fx:id="loginSenha" layoutX="28.0" layoutY="298.0" prefHeight="36.0" prefWidth="270.0" promptText="Digite sua senha" style="-fx-background-color: #F5F6FA; -fx-background-radius: 7;" />
+   </children>
+</AnchorPane>
